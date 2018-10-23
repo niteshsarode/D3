@@ -1,0 +1,38 @@
+/*svg rect {
+   fill: gray;
+}
+
+svg text {
+   fill: yellow;
+   font: 12px sans-serif;
+   text-anchor: end;
+}*/
+
+.axis {
+  font: 14px sans-serif;
+}
+
+circle {
+	fill:green;
+}
+
+.bar { fill: steelblue; }
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 150px;					
+    height: 30px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 1px;		
+    border-radius: 0px;			
+    pointer-events: none;			
+}
+
+body {
+    background-image: url("tsonga.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 2000px;
+}
