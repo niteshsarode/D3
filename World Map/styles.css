@@ -1,0 +1,68 @@
+.switch {
+	width: 35%;
+}
+
+#left{float:left;width:30%;}
+#right{float:right;width:30%;}
+
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  margin:0 10 auto;
+  width:100px
+}
+input.cmn-toggle-round + label {
+  padding: 2px;
+  width: 90px;
+  height: 40px;
+  background-color: #dddddd;
+  border-radius: 60px;
+}
+input.cmn-toggle-round + label:before,
+input.cmn-toggle-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.cmn-toggle-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round + label:after {
+  width: 35px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin 0.4s;
+}
+input.cmn-toggle-round:checked + label:before {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round:checked + label:after {
+  margin-left: 60px;
+}
+
+.map{
+  margin-top: 0px; 
+  width: 70%; 
+  height: 550px; 
+  float:left; 
+  position: relative;
+}
+.pie {
+  margin-right: 50px; 
+  margin-top: 40px; 
+  float: right
+}

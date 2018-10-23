@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+	<title>Data Visualization</title>
+
+    <!-- Include CSS files -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+    <!-- Include JS files -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="topojson.min.js"></script>
+    <script src="datamaps.world.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+	<script src="chart.js"></script>
+ </head>
+<body>
+    <center>
+    <div class="container-fluid bg-transparent" style="width: 90%">
+        <div class="container">
+        <h1 class="display-4">World Map</h1>
+        <p class="lead">Nitesh Sarode</p>
+        <p class="lead">CSE578 Data Visualization</p>
+        <p class="lead">10/15/2018</p>
+        </div>
+    </div>
+    </center>
+    <div class="container-fluid" style="width: 100%; opacity: 0.5; margin-left: 10px">
+        <center>
+            <div class="switch">
+                    <div id = "left"><strong>Population Density</strong></div>
+                    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-1"></label>
+                    <div id = "right"><strong>Population</strong></div>
+            </div>
+
+            <div class="switch">
+                    <div id = "left"><strong>Bubble Map</strong></div>
+                    <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round" type="checkbox" >
+                    <label for="cmn-toggle-2"></label>
+                    <div id = "right"><strong>Choropleth</strong></div>
+            </div>
+        </center>
+        <section>
+            <div id="map" class="map"></div>
+            <div class="pie">
+                <center><strong><div id="country"></div></strong></center>
+                <div id="pie" ></div>
+            </div>
+        </section>
+    </div>
+    <center>
+    <div class="container-fluid" style="width: 85%; opacity: 0.5; margin-left: 120px; float: left">
+    <h1>Analysis</h1>
+    <div style="font-size: 24px; text-align: justify"><p><b>
+        Above on the left we have a map interactive visualization for all the countries which shows two types of data channels (choropleth & bubble). The map has 3 states in which you can view information (show population data in choropleth, show population density with choropleth and show population density with bubble size). 
+        <br>For population shown with choropleth the more dark the shade of blue the more population the country has. 
+        <br>For population density with choropleth the more dark the shade of brown the more population density the country has.
+        <br>For population density with bubbles, larger bubbles correspond to larger population density for the country.
+        <p>The data map provides two interactions, hover and mouse click.
+        <br> When hovering you can see the Population Density or Population of the hovered country.
+        <br> When you click on a country the detail view opens up below the datamap which shows the pie chart stating the distribution of GDP across three fields Agriculture, Industry and Service sector. When a country is clicked the selected country is highlighted in the datamap and its corresponding stats are provided in the detailed view.
+        <h3>Extra Credit</h3>
+        <p>
+        <br>With the above work I have completed 2 bonus tasks for extra-credit hence I feel I should get a total of 50% extra credit for:
+        <br>1) Being able to show two spatial attributes (choropleth and bubble) on the map, with the ability to easily switch between the same.
+        <br>2) Being able to show and toggle the spatial attribute (choropleth) for total population(raw) vs population density(per capita). 
+    </b></p>
+    </div>
+    </div>
+    </center>
+</body>
+</html>
